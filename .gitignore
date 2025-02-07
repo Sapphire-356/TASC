@@ -1,0 +1,54 @@
+# VSCode
+.vscode/
+__pycache__/
+
+# link and directory
+output
+output_*/
+output_*
+temp
+temp2/
+temp_*
+analysis/*/
+data/
+*-main
+*-master
+
+# gpus
+*.pbs
+# *.yaml
+
+# gpus scripts
+generate_yaml*.py
+start.sh
+start*.sh
+qsub_*.py
+process_*.sh
+
+# special files
+*.whl
+*.pkl
+*.pth
+*.png
+test.py
+test2.py
+*.ipynb
+analysis/fine-grained_*.py
+pyrightconfig.json
+
+# special directory
+dinov2/
+SSDA_Dataset
+fastda_cls
+descriptor
+markdown/
+analysis/
+qsub_scripts/
+# exp_scripts/
+draw/
+
+# Python env
+python_pkg
+env_python_pkg.txt
+
+

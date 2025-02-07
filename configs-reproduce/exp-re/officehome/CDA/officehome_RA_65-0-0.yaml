@@ -1,0 +1,75 @@
+amp: true
+control:
+  interval: 1000
+  log_interval: 100
+  max_iter: 10000
+  save_model: false
+  seed:
+    flag: false
+    seed: 2022
+dataset:
+  augmentation:
+  - clip-randomcrop
+  - clip-strong_2
+  balanced: true
+  batchsize: 32
+  name: officehome
+  num_workers: 4
+  shared: 65
+  source_private: 0
+  target_private: 0
+  task: RA
+  val_batchsize: 64
+  val_source: false
+exp_name: exp-tasc20_final-0811_CDA_full
+gpu: 0,
+lightning: true
+logger: DEBUG
+logger_console: false
+lr_schedule:
+  lr_cfg:
+    gamma: 10
+    power: 0.75
+  max_iter: 10000
+  type: inv
+  warmup_iter: 50
+  warmup_min_lr: 1.0e-05
+  warmup_type: linear
+method: TASC
+method_args:
+  TASC:
+    K_beam: 1
+    K_s: 300
+    n_inner: 20
+    num_clusters_dict:
+      domainnet: 400
+      office: 100
+      officehome: 100
+      visda: 100
+  ce_prob_temp: 0.02
+  ent_temp: 0.01
+  ent_thr: 0.3
+  fixed_weights: true
+  loss_s_ce: 1.0
+  loss_t_im_div: 0.6
+  loss_t_im_ent: 1.0
+  metric_temp: 0.01
+  n_keep_status: 5
+  source: true
+  target: true
+  target_classnames: discovered
+  templates_sampling_rate: 1.0
+  templates_type: ensemble
+  text_temp: 0.02
+model:
+  lora_r: 8
+  lora_r_t: 8
+  name: ViT-B/16
+optimizer:
+  backbone_lr: 0.0001
+  momentum: 0.9
+  weight_decay: 0.0005
+test:
+  none: none
+train:
+  none: none
