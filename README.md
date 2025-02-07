@@ -1,12 +1,22 @@
 # TASC
 
-[AAAI 2025] This is the official repository of our paper "Target Semantics Clustering via Text Representations for Robust Universal Domain Adaptation"
+[![Papers-with-Code](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/target-semantics-clustering-via-text/universal-domain-adaptation-on-office-home)](https://paperswithcode.com/sota/universal-domain-adaptation-on-office-home?p=target-semantics-clustering-via-text)
+[![Papers-with-Code](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/target-semantics-clustering-via-text/universal-domain-adaptation-on-domainnet)](https://paperswithcode.com/sota/universal-domain-adaptation-on-domainnet?p=target-semantics-clustering-via-text)
+[![Papers-with-Code](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/target-semantics-clustering-via-text/universal-domain-adaptation-on-visda2017)](https://paperswithcode.com/sota/universal-domain-adaptation-on-visda2017?p=target-semantics-clustering-via-text)
+
+This is the official repository of our paper: "**Target Semantics Clustering via Text Representations for Robust Universal Domain Adaptation**"
+
+> Weinan He, Zilei Wang, Yixin Zhang
+>
+> *Thirty-ninth AAAI Conference on Artificial Intelligence (AAAI 2025)*
 
 > Universal Domain Adaptation (UniDA) focuses on transferring source domain knowledge to the target domain under both domain shift and unknown category shift. Its main challenge lies in identifying common class samples and aligning them. Current methods typically obtain target domain semantics centers from an unconstrained continuous image representation space. Due to domain shift and the unknown number of clusters, these centers often result in complex and less robust alignment algorithm. In this paper, based on visionlanguage models, we search for semantic centers in a semantically meaningful and discrete text representation space. The constrained space ensures almost no domain bias and appropriate semantic granularity for these centers, enabling a simple and robust adaptation algorithm. Specifically, we propose TArget Semantics Clustering (TASC) via Text Representations, which leverages information maximization as a unified objective and involves two stages. First, with the frozen encoders, a greedy search-based framework is used to search for an optimal set of text embeddings to represent target semantics. Second, with the search results fixed, encoders are refined based on gradient descent, simultaneously achieving robust domain alignment and private class clustering. Additionally, we propose Universal Maximum Similarity (UniMS), a scoring function tailored for detecting open-set samples in UniDA. Experimentally, we evaluate the universality of UniDA algorithms under four category shift scenarios. Extensive experiments on four benchmarks demonstrate the effectiveness and robustness of our method, which has achieved state-of-the-art performance.
 
 ## Method
 
-![alt text](image.png)
+<p align="center">
+  <img src="image.png" width="1000">
+</p>
 
 ## Project Structure
 
