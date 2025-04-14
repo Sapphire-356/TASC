@@ -140,4 +140,25 @@ pip install mmcls==0.25.0
    ```shell
    python exp_scripts/get_results.py
    ```
-   
+
+## Citing this work
+
+If you find this repo useful for your research, please consider citing our paper:
+
+```
+@inproceedings{he2025target,
+  title={Target Semantics Clustering via Text Representations for Robust Universal Domain Adaptation},
+  author={He, Weinan and Wang, Zilei and Zhang, Yixin},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={39},
+  number={16},
+  pages={17132--17140},
+  year={2025}
+}
+```
+
+## Contact
+
+If you have further questions or discussions, feel free to contact me:
+
+Weinan He (hwn2018@mail.ustc.edu.cn)
