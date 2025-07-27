@@ -72,7 +72,7 @@ def flatten_json_fields(data):
 
 
 def extract_iteration_number(file_path):
-    return os.path.basename(file_path.split("_")[-1])
+    return int(os.path.basename(file_path).split("_")[-1].split(".")[0])
 
 
 def extract_task_name(folder):
