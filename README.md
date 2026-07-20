@@ -1,6 +1,6 @@
 
 <h2 align="center">
-<a href="https://arxiv.org/abs/2504.10020">[AAAI 2025] Target Semantics Clustering via Text Representations for Robust Universal Domain Adaptation
+<a href="https://arxiv.org/abs/2506.03521">[AAAI 2025] Target Semantics Clustering via Text Representations for Robust Universal Domain Adaptation
 </a></h2>
 
 <h5 align="center"> If you find our project useful, we’d appreciate your support with a star ⭐ on GitHub to receive the latest updates.</h5>
